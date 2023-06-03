@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('app_icon');
             $table->string('app_url');
             $table->string('app_url_fork');
-            $table->string('app_photos');
+            $table->json('app_photos');
             $table->string('short_desc');
             $table->text('desc');
             $table->json('tags');
