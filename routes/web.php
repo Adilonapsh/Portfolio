@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\HRController;
+use App\Http\Controllers\PortfolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,7 +25,12 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {return view('dashboard');})->name('dashboard');
-    Route::resource("/invoice",InvoiceController::class);
-    Route::resource("/hr-management",HRController::class);
+    Route::prefix('admin')->group(function () {
+        Route::get('/dashboard', function () {
+            return view('dashboard');
+        })->name('dashboard');
+        Route::resource("/invoice", InvoiceController::class);
+        Route::resource("/hr-management", HRController::class);
+        Route::resource("/portfolio", PortfolioController::class);
+    });
 });
