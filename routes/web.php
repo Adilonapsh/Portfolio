@@ -3,6 +3,7 @@
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\HRController;
 use App\Http\Controllers\PortfolioController;
+use App\Models\Portfolio;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('portfolio');
+    $portfolios = Portfolio::all()->take(9);
+    return view('portfolio', compact("portfolios"));
 });
 
 Route::middleware([

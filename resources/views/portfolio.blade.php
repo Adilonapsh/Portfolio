@@ -126,7 +126,7 @@
                         class="relative z-10 mx-auto max-w-[1244px] overflow-hidden py-20 sm:rounded-3xl bg-[#ac9b2c10] border-[#ac9b2c] border-spacing-x-28 border">
                         <div class="relative z-10 px-5 sm:px-10 lg:px-16">
                             <h5 class="text-[2rem] font-bold flex items-center">
-                                <img src="{{ asset('assets/icons/sipbg.png') }}" alt="" width="50">
+                                <img src="{{ asset('assets/icons/apps/sipbg.png') }}" alt="" width="50">
                                 <span class="ml-2">SIPBG</span>
                             </h5>
                             <p class="mt-5 text-[1.2rem]">
@@ -165,14 +165,14 @@
                             <div class="mt-10">
                                 <h5 class="text-[2rem] font-bold">Featured Technology Used</h5>
                                 <div class="flex items-center mt-5">
-                                    <img class="ml-5" src="{{ asset('/assets/icons/laravel.webp') }}"
+                                    <img class="ml-5" src="{{ asset('/assets/icons/features/laravel.webp') }}"
                                         alt="" width="70" height="70">
-                                    <img class="ml-5" src="{{ asset('/assets/icons/nodejs.webp') }}" alt=""
-                                        width="70" height="70">
-                                    <img class="ml-5" src="{{ asset('/assets/icons/postgresql.webp') }}"
+                                    <img class="ml-5" src="{{ asset('/assets/icons/features/nodejs.webp') }}"
                                         alt="" width="70" height="70">
-                                    <img class="ml-5" src="{{ asset('/assets/icons/nginx.webp') }}" alt=""
-                                        width="70" height="70">
+                                    <img class="ml-5" src="{{ asset('/assets/icons/features/postgresql.webp') }}"
+                                        alt="" width="70" height="70">
+                                    <img class="ml-5" src="{{ asset('/assets/icons/features/nginx.webp') }}"
+                                        alt="" width="70" height="70">
                                 </div>
                             </div>
                             <img class="absolute top-0 left-0" style="background-size: cover; opacity: .4;"
@@ -185,7 +185,8 @@
                         class="relative z-10 mx-auto max-w-[1244px] overflow-hidden py-20 sm:rounded-3xl bg-[#e8293010] border-[#e82930] border-spacing-x-28 border">
                         <div class="relative z-10 px-5 sm:px-10 lg:px-16">
                             <h5 class="text-[2rem] font-bold flex items-center">
-                                <img src="{{ asset('assets/icons/dgis-s.webp') }}" alt="" width="50">
+                                <img src="{{ asset('assets/icons/apps/dgis-s.webp') }}" alt=""
+                                    width="50">
                                 <span class="ml-2">INTERAKSI DGIS</span>
                             </h5>
                             <p class="mt-5 text-[1.2rem]">
@@ -222,14 +223,14 @@
                             <div class="mt-10 z-10">
                                 <h5 class="text-[2rem] font-bold">Featured Technology Used</h5>
                                 <div class="flex items-center mt-5">
-                                    <img class="ml-5" src="{{ asset('/assets/icons/laravel.webp') }}"
+                                    <img class="ml-5" src="{{ asset('/assets/icons/features/laravel.webp') }}"
                                         alt="" width="70" height="70">
-                                    <img class="ml-5" src="{{ asset('/assets/icons/nodejs.webp') }}"
+                                    <img class="ml-5" src="{{ asset('/assets/icons/features/nodejs.webp') }}"
                                         alt="" width="70" height="70">
-                                    <img class="ml-5" src="{{ asset('/assets/icons/postgresql.webp') }}"
+                                    <img class="ml-5" src="{{ asset('/assets/icons/features/postgresql.webp') }}"
                                         alt="" width="70" height="70">
-                                    <img class="ml-5" src="{{ asset('/assets/icons/nginx.webp') }}" alt=""
-                                        width="70" height="70">
+                                    <img class="ml-5" src="{{ asset('/assets/icons/features/nginx.webp') }}"
+                                        alt="" width="70" height="70">
                                 </div>
                             </div>
 
@@ -259,126 +260,128 @@
                             class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Arduino</button>
                         <button type="button"
                             class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Stream</button>
+                        <button type="button"
+                            class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800">Bots</button>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div
-                            class="relative hover:-translate-y-2 hover:drop-shadow-lg transition-all h-auto w-full rounded-lg">
-                            <a href="#">
-                                <div class="hidden lg:block">
-                                    <img class="h-auto max-w-full rounded-lg"
-                                        src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-                                        alt="">
-                                    <div
-                                        class="absolute bottom-0 w-full left-auto p-5 bg-[#ffffff] dark:bg-[#212c49] dark:border-[#212c49] rounded-lg border overflow-hidden hidden lg:block">
-                                        <div class="relative flex justify-between items-center">
-                                            <div>
-                                                <h5 class="text-2xl font-bold rounded-lg">SIMTARU V3</h5>
-                                                <hr class="h-px bg-gray-200 border-y-2 dark:bg-gray-700">
+                        @foreach ($portfolios as $item)
+                            <div
+                                class="relative hover:-translate-y-2 hover:drop-shadow-lg transition-all h-auto w-full rounded-lg">
+                                <a href="{{ route('portfolio.show', $item->slug) }}">
+                                    <div class="hidden lg:block h-96">
+                                        <img class="h-auto max-w-full rounded-lg"
+                                            src="{{ asset('/storage/img/portfolio/photos/') }}/{{ json_decode($item->app_photos)[0] }}"
+                                            alt="">
+                                        <div
+                                            class="absolute bottom-0 w-full left-auto p-5 bg-[#ffffff] dark:bg-[#212c49] dark:border-[#212c49] rounded-lg border overflow-hidden hidden lg:block">
+                                            <div class="relative flex justify-between items-center">
+                                                <div>
+                                                    <h5 class="text-2xl font-bold rounded-lg uppercase">
+                                                        {{ $item->app_name }}
+                                                    </h5>
+                                                    <hr class="h-px bg-gray-200 border-y-2 dark:bg-gray-700">
+                                                </div>
+                                                <div class="flex items-center z-10">
+                                                    @if ($item->app_url_fork)
+                                                        <a href="{{ $item->app_url_fork }}"
+                                                            class="p-2 rounded-lg hover:drop-shadow-md hover:bg-gray-100 hover:dark:text-gray-900 transition mr-2"
+                                                            title="Fork">
+                                                            <svg stroke="currentColor" fill="currentColor"
+                                                                stroke-width="0" viewBox="0 0 24 24" height="20"
+                                                                width="20" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337 0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065 2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5 21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313-.146.735-.565 1.791-1.778 2.252-1.192.452-2.053.953-2.646 1.536-.593-.583-1.453-1.084-2.646-1.536-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5 10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7 16 6.327 16 5.5 16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5.673-1.5 1.5-1.5 1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7 5 6.327 5 5.5 5.673 4 6.5 4z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    @endif
+                                                    @if ($item->app_url)
+                                                        <a href="{{ $item->app_url }}"
+                                                            class="p-2 rounded-lg hover:drop-shadow-md hover:bg-gray-100 hover:dark:text-gray-900 transition mr-2"
+                                                            title="Go To Page">
+                                                            <svg stroke="currentColor" fill="none"
+                                                                stroke-width="2" viewBox="0 0 24 24"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                height="21" width="21"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                </path>
+                                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                                <line x1="10" y1="14" x2="21"
+                                                                    y2="3">
+                                                                </line>
+                                                            </svg>
+                                                        </a>
+                                                    @endif
+                                                </div>
                                             </div>
-                                            <div class="flex items-center z-10">
-                                                <a href="#"
-                                                    class="p-2 rounded-lg hover:drop-shadow-md hover:bg-gray-100 hover:dark:text-gray-900  transition mr-2"
-                                                    title="Fork">
-                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                                        viewBox="0 0 24 24" height="20" width="20"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337 0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065 2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5 21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313-.146.735-.565 1.791-1.778 2.252-1.192.452-2.053.953-2.646 1.536-.593-.583-1.453-1.084-2.646-1.536-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5 10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7 16 6.327 16 5.5 16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5.673-1.5 1.5-1.5 1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7 5 6.327 5 5.5 5.673 4 6.5 4z">
-                                                        </path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#"
-                                                    class="p-2 rounded-lg hover:drop-shadow-md hover:bg-gray-100 hover:dark:text-gray-900 transition mr-2"
-                                                    title="Go To Page">
-                                                    <svg stroke="currentColor" fill="none" stroke-width="2"
-                                                        viewBox="0 0 24 24" stroke-linecap="round"
-                                                        stroke-linejoin="round" height="21" width="21"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
-                                                        </path>
-                                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                                        <line x1="10" y1="14" x2="21"
-                                                            y2="3">
-                                                        </line>
-                                                    </svg>
-                                                </a>
+                                            <p class="detail w-full capitalize mt-2 hidden lg:block">
+                                                {{ $item->short_desc }}
+                                            </p>
+                                            <div class="flex items-center mt-2">
+                                                @foreach (json_decode($item->feature) as $feature)
+                                                    <img class="ml-2"
+                                                        src="{{ asset('/assets/icons/features/') }}/{{ str_replace(' ', '', $feature) }}.webp"
+                                                        alt="{{ $feature }}" width="30" height="30">
+                                                @endforeach
+                                            </div>
+                                            <img src="{{ asset('assets/assets/triangle.svg') }}"
+                                                class="absolute bottom-0 opacity-20 dark:opacity-60 z-0">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="relative w-full block lg:hidden p-5 border bg-white hover:drop-shadow-md dark:bg-[#212c49] dark:border-[#212c49] overflow-hidden">
+                                        <div class="flex items-center mb-2">
+                                            <img src="{{ asset('/storage/img/portfolio/') }}/{{ $item->app_icon }}"
+                                                alt="" width="50">
+                                            <div class="w-full flex items-center justify-between ml-2">
+                                                <h4 class="text-2xl font-bold uppercase">{{ $item->app_name }}</h4>
+                                                <div class="flex items-center z-10">
+                                                    <a href="#"
+                                                        class="p-2 rounded-lg hover:drop-shadow-sm hover:bg-gray-100 hover:dark:text-gray-900 transition mr-2"
+                                                        title="Fork">
+                                                        <svg stroke="currentColor" fill="currentColor"
+                                                            stroke-width="0" viewBox="0 0 24 24" height="20"
+                                                            width="20" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337 0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065 2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5 21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313-.146.735-.565 1.791-1.778 2.252-1.192.452-2.053.953-2.646 1.536-.593-.583-1.453-1.084-2.646-1.536-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5 10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7 16 6.327 16 5.5 16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5.673-1.5 1.5-1.5 1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7 5 6.327 5 5.5 5.673 4 6.5 4z">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="p-2 rounded-lg hover:drop-shadow-md hover:bg-gray-100 hover:dark:text-gray-900 transition mr-2"
+                                                        title="Go To Page">
+                                                        <svg stroke="currentColor" fill="none" stroke-width="2"
+                                                            viewBox="0 0 24 24" stroke-linecap="round"
+                                                            stroke-linejoin="round" height="21" width="21"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                            </path>
+                                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                                            <line x1="10" y1="14" x2="21"
+                                                                y2="3">
+                                                            </line>
+                                                        </svg>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <p class="detail w-full capitalize mt-2 hidden lg:block">
-                                            Monitor the Activities of Bogor City Planning, Utilization and Spatial
-                                            Control.
-                                        </p>
+                                        <p class="capitalize">{{ $item->short_desc }}</p>
                                         <div class="flex items-center mt-2">
-                                            <img class="ml-2" src="http://127.0.0.1:8000/assets/icons/laravel.webp"
-                                                alt="" width="30" height="30">
-                                            <img class="ml-2" src="http://127.0.0.1:8000/assets/icons/nodejs.webp"
-                                                alt="" width="30" height="30">
-                                            <img class="ml-2"
-                                                src="http://127.0.0.1:8000/assets/icons/postgresql.webp"
-                                                alt="" width="30" height="30">
-                                            <img class="ml-2" src="http://127.0.0.1:8000/assets/icons/nginx.webp"
-                                                alt="" width="30" height="30">
+                                            @foreach (json_decode($item->feature) as $feature)
+                                                <img class="ml-2"
+                                                    src="{{ asset('/assets/icons/features/') }}/{{ str_replace(' ', '', $feature) }}.webp"
+                                                    alt="{{ $feature }}" width="30" height="30">
+                                            @endforeach
                                         </div>
                                         <img src="{{ asset('assets/assets/triangle.svg') }}"
                                             class="absolute bottom-0 opacity-20 dark:opacity-60 z-0">
                                     </div>
-                                </div>
-                                <div
-                                    class="relative w-full block lg:hidden p-5 border bg-white hover:drop-shadow-md dark:bg-[#212c49] dark:border-[#212c49]">
-                                    <div class="flex items-center mb-2">
-                                        <img src="{{ asset('assets/icons/sipbg.png') }}" alt=""
-                                            width="50">
-                                        <div class="w-full flex items-center justify-between ml-2">
-                                            <h4 class="text-2xl font-bold">SIMTARU V3</h4>
-                                            <div class="flex items-center z-10">
-                                                <a href="#"
-                                                    class="p-2 rounded-lg hover:drop-shadow-sm hover:bg-gray-100 hover:dark:text-gray-900 transition mr-2"
-                                                    title="Fork">
-                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                                        viewBox="0 0 24 24" height="20" width="20"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337 0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065 2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5 21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313-.146.735-.565 1.791-1.778 2.252-1.192.452-2.053.953-2.646 1.536-.593-.583-1.453-1.084-2.646-1.536-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5 10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7 16 6.327 16 5.5 16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5.673-1.5 1.5-1.5 1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7 5 6.327 5 5.5 5.673 4 6.5 4z">
-                                                        </path>
-                                                    </svg>
-                                                </a>
-                                                <a href="#"
-                                                    class="p-2 rounded-lg hover:drop-shadow-md hover:bg-gray-100 hover:dark:text-gray-900 transition mr-2"
-                                                    title="Go To Page">
-                                                    <svg stroke="currentColor" fill="none" stroke-width="2"
-                                                        viewBox="0 0 24 24" stroke-linecap="round"
-                                                        stroke-linejoin="round" height="21" width="21"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
-                                                        </path>
-                                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                                        <line x1="10" y1="14" x2="21"
-                                                            y2="3">
-                                                        </line>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p>Monitor the Activities of Bogor City Planning, Utilization and Spatial
-                                        Control.</p>
-                                    <div class="flex items-center mt-2">
-                                        <img class="ml-2" src="http://127.0.0.1:8000/assets/icons/laravel.webp"
-                                            alt="" width="30" height="30">
-                                        <img class="ml-2" src="http://127.0.0.1:8000/assets/icons/nodejs.webp"
-                                            alt="" width="30" height="30">
-                                        <img class="ml-2" src="http://127.0.0.1:8000/assets/icons/postgresql.webp"
-                                            alt="" width="30" height="30">
-                                        <img class="ml-2" src="http://127.0.0.1:8000/assets/icons/nginx.webp"
-                                            alt="" width="30" height="30">
-                                    </div>
-                                    <img src="{{ asset('assets/assets/triangle.svg') }}"
-                                        class="absolute bottom-0 opacity-20 dark:opacity-60 z-0">
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
