@@ -386,6 +386,283 @@
                 </div>
             </div>
         </section>
+        <section class="dark:bg-gray-900 min-h-screen w-full py-10">
+            <div class="flex flex-col items-center mx-auto mb-5">
+                <div class="flex items-center">
+                    <img src="{{ asset('/assets/icons/project.png') }}" alt="">
+                    <h4
+                        class="text-[3rem] mob:text-[2.6rem] md:text-[4rem] font-extrabold tracking-tighter capitalize">
+                        Skills
+                    </h4>
+                </div>
+                <div>
+                    <div class="mb-4 border-b border-gray-200 dark:border-gray-700 py-4">
+                        <ul class="flex flex-wrap justify-center -mb-px text-sm font-medium text-center"
+                            id="myTab" data-tabs-toggle="#skillsTab" role="tablist">
+                            <li class="mr-2" role="presentation">
+                                <button
+                                    class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+                                    id="language-tab" data-tabs-target="#language" type="button" role="tab"
+                                    aria-controls="language" aria-selected="false">Language</button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button
+                                    class="itext-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+                                    id="framework-tab" data-tabs-target="#framework" type="button" role="tab"
+                                    aria-controls="framework" aria-selected="false">Framework/Library</button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button
+                                    class="itext-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+                                    id="ui-framework-tab" data-tabs-target="#ui-framework" type="button"
+                                    role="tab" aria-controls="ui-framework" aria-selected="false">UI
+                                    Framework/Components</button>
+                            </li>
+                            <li role="presentation">
+                                <button
+                                    class="itext-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+                                    id="dbms-tab" data-tabs-target="#dbms" type="button" role="tab"
+                                    aria-controls="dbms" aria-selected="false">DBMS</button>
+                            </li>
+                            <li role="presentation">
+                                <button
+                                    class="itext-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+                                    id="operating-system-tab" data-tabs-target="#operating-system" type="button"
+                                    role="tab" aria-controls="operating-system" aria-selected="false">Operating
+                                    System</button>
+                            </li>
+                            <li role="presentation">
+                                <button
+                                    class="itext-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+                                    id="misc-tab" data-tabs-target="#misc" type="button" role="tab"
+                                    aria-controls="misc" aria-selected="false">Misc</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="skillsTab">
+                        <div class="hidden p-4 rounded-lg" id="language" role="tabpanel"
+                            aria-labelledby="language-tab">
+                            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/html.webp') }}" alt="HTML"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/css.webp') }}" alt="CSS"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/javascript.webp') }}" alt="Javascript"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/php.webp') }}" alt="PHP"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/python.webp') }}" alt="Python"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/csharp.webp') }}" alt="CSharp"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/c++.webp') }}" alt="C++"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/dart.webp') }}" alt="Dart"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/arduino.webp') }}" alt="Arduino"
+                                        width="70" height="70">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden p-4 rounded-lg" id="framework" role="tabpanel"
+                            aria-labelledby="framework-tab">
+                            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/laravel.webp') }}" alt="Laravel"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/flutter.webp') }}" alt="Flutter"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/vite.webp') }}" alt="Vite"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/nodejs.webp') }}" alt="Node Js"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/react.webp') }}" alt="React"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img class="hidden dark:block"
+                                        src="{{ asset('/assets/icons/features/expressjs.webp') }}" alt="Express Js"
+                                        width="70" height="70">
+                                    <img class="block dark:hidden"
+                                        src="{{ asset('/assets/icons/features/expressjs_dark.webp') }}"
+                                        alt="Express Js" width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img class="hidden dark:block"
+                                        src="{{ asset('/assets/icons/features/flask.webp') }}" alt="Flask"
+                                        width="70" height="70">
+                                    <img class="block dark:hidden"
+                                        src="{{ asset('/assets/icons/features/flask_dark.webp') }}" alt="Flask"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/alpinejs.webp') }}" alt="Alpine Js"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/socketio.webp') }}" alt="Socket IO"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/opencv.webp') }}" alt="Open CV"
+                                        width="70" height="70">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden p-4 rounded-lg" id="ui-framework" role="tabpanel"
+                            aria-labelledby="ui-framework-tab">
+                            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/bootstrap.webp') }}" alt="Bootstrap"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/mdb.webp') }}" alt="MDB"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/tailwind.webp') }}" alt="Tailwind"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/flowbite.webp') }}" alt="Flowbite"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/daisyui.webp') }}" alt="Daisy UI"
+                                        width="70" height="70">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden p-4 rounded-lg" id="dbms" role="tabpanel"
+                            aria-labelledby="dbms-tab">
+                            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/mysql.webp') }}" alt="Mysql"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/postgresql.webp') }}" alt="Postgresql"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/firebase.webp') }}" alt="Firebase"
+                                        width="70" height="70">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden p-4 rounded-lg" id="operating-system" role="tabpanel"
+                            aria-labelledby="operating-system-tab">
+                            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/windows.webp') }}" alt="Windows"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/linux.webp') }}" alt="Linux"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/debian.webp') }}" alt="Debian"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/ubuntu.webp') }}" alt="Ubuntu"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/arch_linux.webp') }}" alt="Arch Linux"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/centos.webp') }}" alt="Centos"
+                                        width="70" height="70">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden p-4 rounded-lg" id="misc" role="tabpanel"
+                            aria-labelledby="misc-tab">
+                            <div class="grid grid-cols-2 lg:grid-cols-5 gap-5">
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/docker.webp') }}" alt="Docker"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/nginx.webp') }}" alt="Nginx"
+                                        width="70" height="70">
+                                </div>
+                                <div
+                                    class="bg-gray-50 rounded-lg flex items-center justify-center p-5 hover:-translate-y-1 hover:drop-shadow-md hover:bg-gray-100 dark:bg-[#212c49] hover:dark:bg-[#212c60] transition-all">
+                                    <img src="{{ asset('/assets/icons/features/apache.webp') }}" alt="Apache"
+                                        width="70" height="70">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <footer class="shadow dark:bg-gray-800">
             <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-white">© 2023 <a
