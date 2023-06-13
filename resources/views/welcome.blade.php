@@ -155,12 +155,6 @@
                 </div>
             </div>
 
-            <div class="rounded-lg bg-outline-break mt-6">
-                <div class="p-5  rounded">
-                    awdjhawkdjhawdkjahwdk
-                </div>
-            </div>
-
             <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
                 <div class="text-center text-sm text-gray-500 sm:text-left">
                     <div class="flex items-center gap-4">

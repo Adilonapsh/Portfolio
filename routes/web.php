@@ -18,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/portfolios', function () {
     $portfolios = Portfolio::all()->take(9);
     return view('portfolio', compact("portfolios"));
 });
