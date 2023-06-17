@@ -22,11 +22,11 @@
                 <table id="portfolio" class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-6 py-3">No.</th>
+                            <th scope="col" class="px-6 py-3" width="1%">No.</th>
                             <th scope="col" class="px-6 py-3">App Name</th>
                             <th scope="col" class="px-6 py-3">App URL</th>
-                            <th scope="col" class="px-6 py-3">App Description</th>
-                            <th scope="col" class="px-6 py-3">Aksi</th>
+                            <th scope="col" class="px-6 py-3 w-72" width="5%">App Description</th>
+                            <th scope="col" class="px-6 py-3" width="1%">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,19 +34,21 @@
                             <tr
                                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                 <td scope="row"
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-100 dark:bg-gray-900">
-                                    {{ $key + 1 }}</td>
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-50 dark:bg-gray-800">
+                                    {{ $key + 1 }}.</td>
                                 <td scope="row"
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     {{ $portfolio->app_name }}</td>
                                 <td scope="row"
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-100 dark:bg-gray-900">
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-50 dark:bg-gray-800">
                                     {{ $portfolio->app_url }}</td>
+                                <td scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white">
+                                    <div class="whitespace-nowrap truncate hover:text-elipsis w-96">
+                                        {{ $portfolio->desc }}
+                                    </div>
+                                </td>
                                 <td scope="row"
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    {{ $portfolio->desc }}</td>
-                                <td scope="row"
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-100 dark:bg-gray-900">
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-gray-50 dark:bg-gray-800">
                                     <button
                                         class="px-3 py-2 bg-yellow-300 text-sm rounded-md hover:bg-yellow-400 hover:text-white duration-200">Edit</button>
                                     <button
