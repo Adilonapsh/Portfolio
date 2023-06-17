@@ -21,7 +21,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/portfolios', function () {
+Route::get('/portfolio', function () {
     $portfolios = Portfolio::all()->take(9);
     return view('portfolio', compact("portfolios"));
 });
@@ -38,5 +38,6 @@ Route::middleware([
         Route::resource("/invoice", InvoiceController::class);
         Route::resource("/hr-management", HRController::class);
         Route::resource("/portfolio", PortfolioController::class);
+        Route::get("/portfolio/-/getportfoliotable", [PortfolioController::class, "getPortfolioTable"]);
     });
 });

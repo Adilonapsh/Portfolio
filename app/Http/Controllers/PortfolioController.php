@@ -14,7 +14,8 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        //
+        $portfolios = Portfolio::all();
+        return view("pages.portfolio.index", compact("portfolios"));
     }
 
     /**
@@ -91,5 +92,18 @@ class PortfolioController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function getPortfolioTable()
+    {
+        // $table = Portfolio::all();
+        // $dt = Datatables::of($table)
+        //     // ->addColumn('aksi', function ($data) use ($column) {
+        //     //     return '<button class="btn btn-sm btn-primary btn-copy-value" data-value="' . $data->{$column} . '">Copy</button>';
+        //     // })
+        //     // ->rawColumns(['aksi'])
+        //     ->make(true);
+
+        // return $dt;
     }
 }

@@ -15,6 +15,31 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <style>
+        .divider {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-self: stretch;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            height: 1rem;
+            white-space: nowrap;
+        }
+
+        .divider:before,
+        .divider:after {
+            content: "";
+            flex-grow: 1;
+            height: .125rem;
+            width: 100%;
+        }
+
+        .divider:not(:empty) {
+            gap: 1rem;
+        }
+    </style>
 </head>
 
 <body class="antialiased">

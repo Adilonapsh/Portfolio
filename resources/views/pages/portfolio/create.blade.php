@@ -1,5 +1,10 @@
 <x-app-layout>
-    <div class="p-10 dark:text-white">
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Portfolio') }} / {{ __('Create') }}
+        </h2>
+    </x-slot>
+    <div class="lg:p-10 dark:text-white transition-all">
         <div class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <form action="{{ route('portfolio.store') }}" enctype="multipart/form-data" method="POST">
                 @csrf
