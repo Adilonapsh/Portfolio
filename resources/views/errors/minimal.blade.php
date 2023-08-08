@@ -24,7 +24,7 @@
                     <h4 class="text-5xl mb-3 font-bold">@yield('message')</h4>
                     <p class="w-96 mb-5 font-semibold text-center">@yield('description')</p>
                     <div class="flex justify-evenly w-full">
-                        <a href="{{ url()->previous() }}" class="btn bg-gray-800 px-5 py-2 rounded text-white font-semibold">Kembali</a>
+                        <a href="{{ url()->previous() }}" class="btn bg-gray-800 px-5 py-2 rounded-lg text-white font-semibold">Kembali</a>
                     </div>
                 </div>
                 <div class="order-1 md:order-2 relative">

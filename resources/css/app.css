@@ -5,3 +5,10 @@
 [x-cloak] {
     display: none;
 }
+
+
+.bg-outline-break {
+    background: linear-gradient(145deg, #0093af 0%, #2c2cac00 11%, #2645b800 82%, #00d4ff 100%);
+    padding: 2px;
+} 
+
